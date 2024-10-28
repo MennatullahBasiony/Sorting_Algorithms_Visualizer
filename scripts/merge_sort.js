@@ -9,16 +9,13 @@ function Merge()
     document.getElementById("Space_Worst").innerText="O(N)";
 
     c_delay=0;
-
     merge_partition(0,array_size-1);
-
     enable_buttons();
 }
 
 function merge_sort(start,mid,end)
 {
     var p=start,q=mid+1;
-
     var Arr=[],k=0;
 
     for(var i=start; i<=end; i++)

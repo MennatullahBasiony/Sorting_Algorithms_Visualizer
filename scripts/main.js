@@ -2,7 +2,6 @@
 Variable naming convention: <object>_<action>_<objectname>; Example -> Button_click_b1;
 */
 
-//Variables (BE CAREFUL THESE MIGHT BE USED IN OTHER JS FILES TOO)
 var inp_as=document.getElementById('a_size'),array_size=inp_as.value;
 var inp_gen=document.getElementById("a_generate");
 var inp_aspeed=document.getElementById("a_speed");
@@ -16,8 +15,7 @@ var margin_size;
 var cont=document.getElementById("array_container");
 cont.style="flex-direction:row";
 
-//Array generation and updation.
-
+//Array generation and Update.
 inp_gen.addEventListener("click",generate_array);
 inp_as.addEventListener("input",update_array_size);
 

@@ -9,9 +9,7 @@ function Heap()
     document.getElementById("Space_Worst").innerText="O(1)";
 
     c_delay=0;
-
     heap_sort();
-    
     enable_buttons();
 }
 
@@ -45,7 +43,6 @@ function max_heapify(n,i)
         }
 
         largest=l;
-
         div_update(divs[largest],div_sizes[largest],"red");//Color update
     }
 
@@ -64,7 +61,6 @@ function max_heapify(n,i)
     if(largest!=i)
     {
         swap(i,largest);
-
         max_heapify(n,largest);
     }
 }

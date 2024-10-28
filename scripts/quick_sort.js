@@ -9,9 +9,7 @@ function Quick()
     document.getElementById("Space_Worst").innerText="O(log N)";
 
     c_delay=0;
-
     quick_sort(0,array_size-1);
-
     enable_buttons();
 }
 
@@ -27,7 +25,6 @@ function quick_partition (start, end)
             if (div_sizes[ j ] < piv)
             {
                 div_update(divs[j],div_sizes[j],"yellow");//Color update
-
                 div_update(divs[i],div_sizes[i],"red");//Color update
                 div_update(divs[j],div_sizes[j],"red");//Color update
 
@@ -37,7 +34,6 @@ function quick_partition (start, end)
 
                 div_update(divs[i],div_sizes[i],"red");//Height update
                 div_update(divs[j],div_sizes[j],"red");//Height update
-
                 div_update(divs[i],div_sizes[i],"blue");//Height update
                 div_update(divs[j],div_sizes[j],"blue");//Height update
 

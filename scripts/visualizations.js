@@ -31,7 +31,8 @@ function div_update(cont,height,color)
 
 function enable_buttons()
 {
-    window.setTimeout(function(){
+    window.setTimeout(function()
+    {
         for(var i=0;i<butts_algos.length;i++)
         {
             butts_algos[i].classList=[];

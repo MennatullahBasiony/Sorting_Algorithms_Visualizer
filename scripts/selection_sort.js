@@ -13,13 +13,10 @@ function Selection_sort()
     for(var i=0;i<array_size-1;i++)
     {
         div_update(divs[i],div_sizes[i],"red");//Color update
-
         index_min=i;
-
         for(var j=i+1;j<array_size;j++)
         {
             div_update(divs[j],div_sizes[j],"yellow");//Color update
-
             if(div_sizes[j]<div_sizes[index_min])
             {
                 if(index_min!=i)
